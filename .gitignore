@@ -66,3 +66,10 @@ bower_components
 
 .idea
 .obsidian
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
