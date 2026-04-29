@@ -1,3 +1,6 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "static/js/mathjax"]
+	path = static/js/mathjax
+	url = https://github.com/mathjax/MathJax.git

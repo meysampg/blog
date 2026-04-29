@@ -10,8 +10,28 @@ defaultContentLanguage: fa
 defaultContentLanguageInSubdir: true
 enableInlineShortcodes: true
 
+markup:
+  highlight:
+    style: evergarden
+    lineNos: true
+    lineNumbersInTable: false
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - '\['
+            - '\]'
+          - - $$
+            - $$
+          inline:
+          - - $
+            - $
+        enable: true
+
 languages:
   fa:
+    languagedirection: rtl
     languageName: "Farsi"
     weight: 1
     menu:
@@ -43,7 +63,9 @@ params:
   ShowPostNavLinks: true
   ShowShareButtons: true
   ShowCodeCopyButtons: true
-  hideAuthor: true
+  hideAuthor: false
+
+  math: false
 
   editPost:
     URL: "https://github.com/meysampg/blog/edit/main/content"
@@ -53,18 +75,6 @@ params:
   homeInfoParams:
     Title: "میثم پورگنجی"
     Content: "From Freedom Came Elegance"
-
-  profileMode:
-    enabled: false
-    title: "میثم پورگنجی"
-    subtitle: "From Freedom Came Elegance"
-    imageUrl: "https://avatars.githubusercontent.com/u/1416085?v=4"
-    imageTitle: "avatar"
-    imageWidth: 140
-    imageHeight: 140
-    buttons:
-      - name: "بلاگ"
-        url: "/fa/blog"
 
   socialIcons:
     - name: github
@@ -81,6 +91,13 @@ taxonomies:
   tag: tags
   category: categories
   series: series
+
+outputFormats:
+  llms:
+    mediaType: "text/plain"
+    baseName: "llms"
+    isPlainText: true
+    notAlternative: true
 
 outputs:
   home:

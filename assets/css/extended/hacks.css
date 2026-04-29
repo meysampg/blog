@@ -44,3 +44,9 @@
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
+
+mjx-math {
+    display: inline-block !important;
+}
+
+.chroma .hl { width: max-content; }

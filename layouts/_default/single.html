@@ -1,5 +1,7 @@
 {{- define "main" }}
-
+{{ if .Param "math" }}
+  {{ partialCached "math.html" . }}
+{{ end }}
 <article class="post-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
