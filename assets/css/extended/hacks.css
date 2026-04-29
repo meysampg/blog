@@ -49,4 +49,12 @@ mjx-math {
     display: inline-block !important;
 }
 
-.chroma .hl { width: max-content; }
+.highlight {
+    div,
+    pre {
+        margin: 2rem 0 2rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        overflow: auto; // <- add this
+    }
+}
