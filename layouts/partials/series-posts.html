@@ -1,0 +1,23 @@
+{{/* From: https://npf.io/2014/08/making-it-a-series/ */}}
+{{- if .Params.series }}
+{{- $name := index .Params.series 0 }}
+<div class="series" xmlns="http://www.w3.org/1999/html">
+    <details open>
+        <summary>{{ i18n "series_title" }}</summary>
+        <div class="inner">
+            {{- $name := $name | urlize }}
+            {{- range $key, $taxonomy := .Site.Taxonomies.series }}
+            {{- if eq ($key | urlize) $name }}
+            <ol>
+                {{- range $taxonomy.Pages.ByDate }}
+                <li hugo-nav="{{ .RelPermalink }}">
+                    <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+                </li>
+                {{- end }}
+            </ol>
+            {{- end }}
+            {{- end }}
+        </div>
+    </details>
+</div>
+{{- end }}
