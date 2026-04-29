@@ -3,7 +3,6 @@ title: 'SYN Packet'
 languageCode: fa-IR
 
 theme: PaperMod
-publishDir: ./docs
 cleanDestinationDir: true
 enableRobotsTXT: true
 defaultContentLanguage: fa
