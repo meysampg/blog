@@ -46,7 +46,7 @@ params:
   hideAuthor: true
 
   editPost:
-    URL: "https://github.com/meysampg/blog/edit/master/content"
+    URL: "https://github.com/meysampg/blog/edit/main/content"
     Text: "پیشنهاد تغییر"
     appendFilePath: true
 
