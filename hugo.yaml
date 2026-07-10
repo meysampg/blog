@@ -1,6 +1,6 @@
 baseURL: https://synpacket.io/
 title: 'SYN Packet'
-languageCode: fa-IR
+locale: fa-IR
 
 theme: PaperMod
 cleanDestinationDir: true
@@ -30,8 +30,8 @@ markup:
 
 languages:
   fa:
-    languagedirection: rtl
-    languageName: "Farsi"
+    direction: rtl
+    label: "Farsi"
     weight: 1
     menu:
       main:
@@ -50,6 +50,7 @@ pagination:
 
 params:
   env: production
+  description: "میثم پورگنجی - بلاگ در مورد لینوکس، شبکه، برنامه‌نویسی و سیستم‌های توزیع‌یافته"
   keywords: [Blog, OpenSource, Coding, Golang, Programming]
   author: "میثم پورگنجی"
   defaultTheme: auto
