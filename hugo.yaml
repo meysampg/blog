@@ -1,6 +1,5 @@
 baseURL: https://synpacket.io/
 title: 'SYN Packet'
-locale: fa-IR
 
 theme: PaperMod
 cleanDestinationDir: true
