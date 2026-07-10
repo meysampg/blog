@@ -1,5 +1,6 @@
 baseURL: https://synpacket.io/
 title: 'SYN Packet'
+languageCode: fa-IR
 
 theme: PaperMod
 cleanDestinationDir: true
@@ -29,8 +30,8 @@ markup:
 
 languages:
   fa:
-    direction: rtl
-    label: "Farsi"
+    languagedirection: rtl
+    languageName: "Farsi"
     weight: 1
     menu:
       main:
